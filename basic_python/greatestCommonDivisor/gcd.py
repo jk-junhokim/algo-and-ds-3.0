@@ -35,7 +35,7 @@ class Fraction:
 
         return first_num == second_num
     
-x = Fraction(1, 2)
-y = Fraction(2, 3)
+x = Fraction(1, 3)
+y = Fraction(1, 2)
 print(x + y)
 print(x == y)
