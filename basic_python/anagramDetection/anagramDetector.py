@@ -1,7 +1,7 @@
 # one string is an anagram of another if the second is simply a rearrangement of the first
 # assume the length of the strings are equal
 
-def anagram_solution1(s1, s2):
+def anagram_solution_1(s1, s2):
     a_list = list(s2)
 
     index_1 = 0
@@ -28,11 +28,25 @@ def anagram_solution1(s1, s2):
 # print(anagram_solution1("abcd", "cbda"))
 # print(anagram_solution1("apple", "apble"))
 
-def anagram_solution2(s1, s2):
+def anagram_solution_2(s1, s2):
+    a_list = [] * 26
+    a_list_index = 0
+
+    list_form_1 = list(s1)
+
+    for letter in list_form_1:
+        if letter not in a_list:
+            a_list[a_list_index] += 1
+        else:
+            proper_index = a_list.index(letter)
+            a_list[proper_index] += 1
 
     return
 
-def anagram_solution3(s1, s2):
+print(anagram_solution_2("abcd", "cbda"))
+print(anagram_solution_2("apple", "apble"))
+
+def anagram_solution_3(s1, s2):
 
     return
 
