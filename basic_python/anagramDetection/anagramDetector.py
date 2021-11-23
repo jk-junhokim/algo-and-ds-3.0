@@ -29,22 +29,41 @@ def anagram_solution_1(s1, s2):
 # print(anagram_solution1("apple", "apble"))
 
 def anagram_solution_2(s1, s2):
-    a_list = [] * 26
-    a_list_index = 0
-
+    a_list = dict()
     list_form_1 = list(s1)
+
+    b_list = dict()
+    list_form_2 = list(s2)
+
+    is_anagram = True
 
     for letter in list_form_1:
         if letter not in a_list:
-            a_list[a_list_index] += 1
+            a_list.setdefault(letter, 0)
+            a_list[letter] += 1
         else:
-            proper_index = a_list.index(letter)
-            a_list[proper_index] += 1
+            a_list[letter] += 1
 
-    return
+    for letter in list_form_2:
+        if letter not in b_list:
+            b_list.setdefault(letter, 0)
+            b_list[letter] += 1
+        else:
+            b_list[letter] += 1       
 
-print(anagram_solution_2("abcd", "cbda"))
-print(anagram_solution_2("apple", "apble"))
+    for letter in a_list.keys():
+        if letter in b_list.keys():
+            if a_list[letter] == b_list[letter]:
+                pass
+            else:
+                is_anagram = False
+        else:
+            is_anagram = False
+
+    return is_anagram
+
+# print(anagram_solution_2("aacbdcbd", "ccabddba"))
+# print(anagram_solution_2("apple", "apble"))
 
 def anagram_solution_3(s1, s2):
 
