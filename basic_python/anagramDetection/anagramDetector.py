@@ -66,7 +66,49 @@ def anagram_solution_2(s1, s2):
 # print(anagram_solution_2("apple", "apble"))
 
 def anagram_solution_3(s1, s2):
+    a_list = list(s1)
+    b_list = list(s2)
 
-    return
+    a_list.sort()
+    b_list.sort()
 
+    pos = 0
+    is_anagram = True
+
+    while pos < len(s1) and is_anagram:
+        if a_list[pos] == b_list[pos]:
+            pos += 1
+        else:
+            is_anagram = False
+
+    return is_anagram
+
+# print(anagram_solution_3("aacbdcbd", "ccabddba"))
+# print(anagram_solution_3("apple", "apble"))
+# print(anagram_solution_3("apple", "pleap"))
+
+def anagram_solution_4(s1, s2):
+    c1 = [0] * 26
+    c2 = [0] * 26
+
+    for i in range(len(s1)):
+        pos = ord(s1[i]) - ord('a')
+        c1[pos] += 1
+
+    for i in range(len(s2)):
+        pos = ord(s2[i]) - ord('a')
+        c2[pos] += 1
     
+    j = 0
+    is_anagram = True
+    while j < 26 and is_anagram:
+        if c1[j] == c2[j]:
+            j = j + 1
+        else:
+            is_anagram = False
+    
+    return is_anagram
+
+# print(anagram_solution_4("aacbdcbd", "ccabddba"))
+# print(anagram_solution_4("apple", "apble"))
+# print(anagram_solution_4("apple", "pleap"))   
