@@ -5,8 +5,11 @@ class Queue:
     def is_empty(self):
         return self.itmes == []
 
-    def push(self, object):
-        self.items.append(object)
+    def enqueue(self, item):
+        self.items.insert(0, item)
 
-    def pop(self):
-        self.items.pop(0)
+    def dequeue(self):
+        self.items.pop()
+
+    def size(self):
+        return len(self.items)
