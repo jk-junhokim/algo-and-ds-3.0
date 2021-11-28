@@ -12,3 +12,5 @@
 
 """Queues and Applications"""
 from basic_python.queues.queue import Queue
+from basic_python.queues.printer import Printer, Task
+from basic_python.queues.printer import simulation, new_print_task
