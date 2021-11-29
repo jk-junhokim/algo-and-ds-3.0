@@ -7,6 +7,12 @@ class Printer:
         self.current_task = None
         self.time_remaining = 0
 
+    def tick(self):
+        if self.current_task != None:
+            self.time_remaining = self.time_remaining - 1
+            if self.time_remaining <= 0:
+                self.current_task = None
+
 class Task:
     def __init__(self, time):
         self.timestamp = time
