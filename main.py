@@ -15,5 +15,9 @@
 # from basic_python.queues.printer import Printer, Task
 # from basic_python.queues.printer import simulation, new_print_task
 
-"""Deques"""
-from basic_python.queues.deque import Deque
+"""Deques and Applications"""
+# from basic_python.queues.deque import Deque
+# from basic_python.queues.pal_checker import pal_checker
+
+"""Sorting"""
+# from basic_python.queues.deque import Deque
