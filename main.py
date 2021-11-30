@@ -11,6 +11,9 @@
 # from basic_python.stacks.parenthesisChecker import par_checker_simple, par_checker_general
 
 """Queues and Applications"""
-from basic_python.queues.queue import Queue
-from basic_python.queues.printer import Printer, Task
-from basic_python.queues.printer import simulation, new_print_task
+# from basic_python.queues.queue import Queue
+# from basic_python.queues.printer import Printer, Task
+# from basic_python.queues.printer import simulation, new_print_task
+
+"""Deques"""
+from basic_python.queues.deque import Deque
