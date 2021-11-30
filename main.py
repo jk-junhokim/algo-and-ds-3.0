@@ -19,5 +19,5 @@
 # from basic_python.queues.deque import Deque
 # from basic_python.queues.pal_checker import pal_checker
 
-"""Sorting"""
-# from basic_python.queues.deque import Deque
+"""Searching & Sorting"""
+from basic_python.searchAndSort.sequential_search import sequential_search 
