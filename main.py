@@ -20,5 +20,5 @@
 # from basic_python.queues.pal_checker import pal_checker
 
 """Searching & Sorting"""
-from basic_python.searchAndSort.sequential_search import sequential_search
-from basic_python.searchAndSort.sequential_search import sequential_search
+# from basic_python.searchAndSort.sequential_search import sequential_search
+# from basic_python.searchAndSort.binary_search import binary_search
