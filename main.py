@@ -22,4 +22,5 @@
 """Searching & Sorting"""
 # from basic_python.searchAndSort.sequential_search import sequential_search
 # from basic_python.searchAndSort.binary_search import binary_search
-from basic_python.searchAndSort.bubble_sort import bubble_sort
+# from basic_python.searchAndSort.bubble_sort import bubble_sort, short_bubble_sort
+from basic_python.searchAndSort.selection_sort import selection_sort
