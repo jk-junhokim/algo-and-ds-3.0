@@ -24,4 +24,5 @@
 # from basic_python.searchAndSort.binary_search import binary_search
 # from basic_python.searchAndSort.bubble_sort import bubble_sort, short_bubble_sort
 # from basic_python.searchAndSort.selection_sort import selection_sort
+from basic_python.searchAndSort.insertion_sort import insertion_sort
 from basic_python.searchAndSort.search_sort_practice import sequential_search_practice, binary_search_practice, bubble_sort_practice, short_bubble_sort_practice

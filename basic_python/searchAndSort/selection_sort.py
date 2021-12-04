@@ -9,6 +9,6 @@ def selection_sort(a_list):
         a_list[fill_slot] = a_list[pos_of_max]
         a_list[pos_of_max] = temp
 
-a_list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
-selection_sort(a_list)
-print(a_list)
+# a_list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
+# selection_sort(a_list)
+# print(a_list)
