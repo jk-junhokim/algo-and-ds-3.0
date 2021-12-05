@@ -10,6 +10,6 @@ def insertion_sort(a_list):
 
         a_list[position] = current_value
     
-a_list = [54, 29, 92, 15, 77, 6, 44, 10]
-insertion_sort(a_list)
-print(a_list)
+# a_list = [54, 29, 92, 15, 77, 6, 44, 10]
+# insertion_sort(a_list)
+# print(a_list)
